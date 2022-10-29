@@ -1,0 +1,56 @@
+.footer {
+	&__inner {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		@media screen and (max-width:768px) {
+			flex-direction: column;
+			gap: 70px;
+		}
+	}
+
+	&__top {
+		padding: 20px 0 20px;
+		background-color: #F7F7F7;
+	}
+
+	&__content {
+		max-width: 500px;
+	}
+
+	&__title {
+		@include font(400, 19px, 30px, #000);
+		margin-bottom: 12px;
+	}
+
+	&__text {
+		margin-bottom: 20px;
+	}
+
+	&__adress {
+		font-style: normal;
+	}
+
+	&__bottom {
+		padding: 18px 0 25px;
+	}
+
+	&__pay-menu {
+		display: flex;
+	}
+
+	&__pay-item {
+		&+* {
+			margin-left: 5px;
+		}
+	}
+
+	&__copy {
+		@include font(400, 13px, 19px, #000);
+
+		& span {
+			color: #FF4A32;
+		}
+	}
+}
+

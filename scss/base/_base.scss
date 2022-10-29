@@ -1,6 +1,11 @@
 html,
 body {
-	height: 100%;
+	min-height: 100%;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+	@include font(400, 15px, 22px, #000)
 }
 
 .wrapper {
@@ -18,8 +23,12 @@ body {
 }
 
 .container {
-	max-width: 1200px;
+	max-width: 1210px;
 	margin: 0 auto;
 	padding-left: 15px;
 	padding-right: 15px;
+}
+
+.none{
+	display: none;
 }

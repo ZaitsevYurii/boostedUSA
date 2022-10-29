@@ -1,0 +1,82 @@
+.header {
+
+	&__top {
+		padding: 7px 0 7px;
+		background-color: #000;
+	}
+
+	&__top-text {
+		@include font(400, 12px, 15px, #FBFBFB);
+		text-align: center;
+		letter-spacing: 2px;
+	}
+
+	&__bottom {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	&__logo {
+		margin-left: 10px;
+	}
+
+	&__menu {
+		display: flex;
+
+		@media screen and (max-width:779px) {
+			flex-direction: column;
+			position: absolute;
+			top: 100px;
+			right: 0;
+			background-color: #000;
+		}
+	}
+
+	&__item {
+		@media screen and (max-width:779px) {
+			margin-bottom: 20px;
+		}
+	}
+
+	&__item+* {
+		margin-left: 22px;
+
+		@media screen and (max-width:1024px) {
+			margin-left: 0;
+		}
+	}
+
+	&__link {
+		padding: 10px 10px 10px;
+		@include font(400, 14px, 21px, #000);
+		letter-spacing: 1px;
+		text-transform: uppercase;
+		transition: all .3s ease;
+
+		@media screen and (max-width:1024px) {
+			@include font(400, 10px, 21px, #000);
+		}
+
+		@media screen and (max-width:779px) {
+			color: #FBFBFB;
+			padding: 20px;
+		}
+
+		&:hover {
+			padding: 10px 10px 10px;
+			background: #000;
+			color: #FBFBFB;
+		}
+	}
+
+	&__bio {
+		display: flex;
+		margin-right: 20px;
+	}
+
+	&__bio-link+* {
+		margin-left: 10px;
+	}
+
+}

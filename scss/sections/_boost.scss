@@ -1,0 +1,38 @@
+.boost {
+	padding: 45px 0;
+
+	&__inner {
+		display: flex;
+		align-items: center;
+		gap: 20px;
+
+		@media screen and (max-width:768px) {
+			flex-direction: column;
+
+		}
+	}
+
+	&__image {
+		width: 380px;
+		height: 380px;
+		object-fit: cover;
+	}
+
+	&__content {
+		max-width: 340px;
+		padding: 20px 20px;
+	}
+
+	&__title {
+		@include font(400, 32px, 38px, #000);
+		margin-bottom: 21px;
+	}
+
+	&__text {
+		margin-bottom: 18px;
+	}
+
+	&__link {
+		padding: 5px 16px;
+	}
+}

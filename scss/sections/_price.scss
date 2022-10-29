@@ -1,0 +1,54 @@
+.price {
+
+	&__inner {
+		display: flex;
+		align-items: center;
+
+		@media screen and (max-width:1024px) {
+			flex-direction: column;
+		}
+	}
+
+	&__card {
+		padding: 197px 123px 193px;
+		text-align: center;
+		width: 100%;
+		height: 100%;
+		transition: all .4s ease;
+
+		&:hover {
+			transform: scale(0.9);
+			opacity: .8;
+		}
+	}
+
+	&__card:nth-child(1) {
+		background-image: url("../../img/main/price/Rectangle.jpg");
+		background-position: center;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&__card:nth-child(2) {
+		background-image: url("../../img/main/price/Rectangle\ \(1\).jpg");
+		background-size: cover;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&__card:nth-child(3) {
+		background-image: url("../../img/main/price/Rectangle\ \(2\).jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+		background-repeat: no-repeat;
+	}
+
+	&__card-title {
+		@include font(400, 23px, 30px, #fff);
+		margin-bottom: 15px;
+	}
+
+	&__card-text {
+		@include font(400, 18px, 23px, #fff);
+	}
+}
